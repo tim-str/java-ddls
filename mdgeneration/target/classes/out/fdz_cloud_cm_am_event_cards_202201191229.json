@@ -1,0 +1,1224 @@
+{
+  "name": "am_event_cards",
+  "namespace": "fdz_cloud",
+  "source_system": "FDZ_CLOUD_CM",
+  "mutable": true,
+  "owning_group_id": "Fraud team",
+  "loadtype": "DELTA",
+  "raw_table_name": "am_event_cards",
+  "overwrite_conformed_partition_key": "",
+  "delimiter": "",
+  "row_delimiter": "",
+  "columns": [
+    {
+      "name": "event_id",
+      "length": 1024,
+      "nullable": false,
+      "nk": true,
+      "ordinal_position": 1,
+      "description": "EVENT_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_timestamp",
+      "length": -1,
+      "nullable": false,
+      "nk": false,
+      "ordinal_position": 2,
+      "description": "EVENT_TIMESTAMP",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_version_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 3,
+      "description": "EVENT_VERSION_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_version_timestamp",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 4,
+      "description": "EVENT_VERSION_TIMESTAMP",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_alert",
+      "length": -1,
+      "nullable": false,
+      "nk": false,
+      "ordinal_position": 5,
+      "description": "EVENT_ALERT",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_tenant",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 6,
+      "description": "EVENT_TENANT",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "queue_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 7,
+      "description": "QUEUE_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "user_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 8,
+      "description": "USER_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "access_group_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 9,
+      "description": "ACCESS_GROUP_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "status_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 10,
+      "description": "STATUS_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_status_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 11,
+      "description": "EVENT_STATUS_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "decision_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 12,
+      "description": "DECISION_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_decision_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 13,
+      "description": "EVENT_DECISION_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "investigation_status_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 14,
+      "description": "INVESTIGATION_STATUS_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_investigation_status_id",
+      "length": 40,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 15,
+      "description": "EVENT_INVESTIGATION_STATUS_ID",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "channelid",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 16,
+      "description": "channelId",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "fraud_score",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 17,
+      "description": "fraud_score",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "amount",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 18,
+      "description": "amount",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "currency_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 19,
+      "description": "currency_code",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 20,
+      "description": "customer_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_email",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 21,
+      "description": "customer_email",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_phone",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 22,
+      "description": "customer_phone",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_city",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 23,
+      "description": "customer_city",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_street_addr",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 24,
+      "description": "customer_street_addr",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_pan",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 25,
+      "description": "card_pan",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_pan_masked",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 26,
+      "description": "card_pan_masked",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_last4",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 27,
+      "description": "card_last4",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 28,
+      "description": "card_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_category",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 29,
+      "description": "card_category",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_brand",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 30,
+      "description": "card_brand",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 31,
+      "description": "card_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "acquirer_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 32,
+      "description": "acquirer_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_bin",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 33,
+      "description": "card_bin",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "lifecycle_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 34,
+      "description": "lifecycle_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_bic",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 35,
+      "description": "account_bic",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_open_date",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 36,
+      "description": "account_open_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_iban",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 37,
+      "description": "account_iban",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_balance",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 38,
+      "description": "account_balance",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_credit_limit",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 39,
+      "description": "card_credit_limit",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_number_of_cards",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 40,
+      "description": "account_number_of_cards",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_status",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 41,
+      "description": "account_status",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_last_activity",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 42,
+      "description": "account_last_activity",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_open_date",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 43,
+      "description": "merchant_open_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_legal_name",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 44,
+      "description": "merchant_legal_name",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_risk",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 45,
+      "description": "merchant_risk",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_zip",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 46,
+      "description": "merchant_zip",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_country_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 47,
+      "description": "merchant_country_code",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 48,
+      "description": "merchant_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mcc",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 49,
+      "description": "mcc",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "sic_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 50,
+      "description": "sic_code",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_id",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 51,
+      "description": "terminal_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_street_addr",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 52,
+      "description": "terminal_street_addr",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_poc_flag",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 53,
+      "description": "terminal_poc_flag",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_city",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 54,
+      "description": "terminal_city",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_country_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 55,
+      "description": "terminal_country_code",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_zip",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 56,
+      "description": "terminal_zip",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 57,
+      "description": "event_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "info_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 58,
+      "description": "info_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "feedback_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 59,
+      "description": "feedback_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "action_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 60,
+      "description": "action_code",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "event_occurred_at",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 61,
+      "description": "event_occurred_at",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "capture_date",
+      "length": 256,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 62,
+      "description": "capture_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_available_credit",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 63,
+      "description": "account_available_credit",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "account_credit_limit",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 64,
+      "description": "account_credit_limit",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_effective_date",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 65,
+      "description": "card_effective_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_expiration_date",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 66,
+      "description": "card_expiration_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_status",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 67,
+      "description": "card_status",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_region",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 68,
+      "description": "customer_region",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_zip",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 69,
+      "description": "customer_zip",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_presence_flag",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 70,
+      "description": "card_presence_flag",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "pos_read_cap",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 71,
+      "description": "pos_read_cap",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "pos_card_capture_cap",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 72,
+      "description": "pos_card_capture_cap",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "pos_cardholder_ver_cap",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 73,
+      "description": "pos_cardholder_ver_cap",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "terminal_region",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 74,
+      "description": "terminal_region",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_mastercard_risk",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 75,
+      "description": "merchant_mastercard_risk",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_visa_risk",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 76,
+      "description": "merchant_visa_risk",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_risky_flag",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 77,
+      "description": "merchant_risky_flag",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "oob_start_date",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 78,
+      "description": "oob_start_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "oob_end_date",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 79,
+      "description": "oob_end_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "oob_comm_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 80,
+      "description": "oob_comm_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "oob_notes",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 81,
+      "description": "oob_notes",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "oob_feedback_notes",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 82,
+      "description": "oob_feedback_notes",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "oob_response_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 83,
+      "description": "oob_response_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_start_date",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 84,
+      "description": "dispute_start_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_submitted_by",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 85,
+      "description": "dispute_submitted_by",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_notes",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 86,
+      "description": "dispute_notes",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_reason",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 87,
+      "description": "dispute_reason",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_end_date",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 88,
+      "description": "dispute_end_date",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_refunded",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 89,
+      "description": "dispute_refunded",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "dispute_feedback_notes",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 90,
+      "description": "dispute_feedback_notes",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_street_addr",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 91,
+      "description": "merchant_street_addr",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_city",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 92,
+      "description": "merchant_city",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "transaction_status",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 93,
+      "description": "transaction_status",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "merchant_name",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 94,
+      "description": "merchant_name",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "ttc",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 95,
+      "description": "ttc",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "atc1",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 96,
+      "description": "atc1",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "atc2",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 97,
+      "description": "atc2",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "tenant",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 98,
+      "description": "tenant",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "outcome_decision",
+      "length": 255,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 99,
+      "description": "outcome_decision",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "curated_explanations",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 100,
+      "description": "curated_explanations",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "action_alert",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 101,
+      "description": "action_alert",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "action_auto_decline_card",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 102,
+      "description": "action_auto_decline_card",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "action_auto_approve_card",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 103,
+      "description": "action_auto_approve_card",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "action_limit_review_card",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 104,
+      "description": "action_limit_review_card",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "action_stua",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 105,
+      "description": "action_stua",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "cardholder_bill_amount",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 106,
+      "description": "cardholder_bill_amount",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "cardholder_bill_currency_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 107,
+      "description": "cardholder_bill_currency_code",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_member_number",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 108,
+      "description": "customer_member_number",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "pos_card_read_method",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 109,
+      "description": "pos_card_read_method",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "ecommerce_indicator",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 110,
+      "description": "ecommerce_indicator",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "pos_cardholder_ver_method",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 111,
+      "description": "pos_cardholder_ver_method",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "transaction_status_reason",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 112,
+      "description": "transaction_status_reason",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "brand",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 113,
+      "description": "brand",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "scheme_score",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 114,
+      "description": "scheme_score",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_name_prefix",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 115,
+      "description": "customer_name_prefix",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_name_first",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 116,
+      "description": "customer_name_first",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_name_middle",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 117,
+      "description": "customer_name_middle",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "customer_name_last",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 118,
+      "description": "customer_name_last",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "tenant_service_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 119,
+      "description": "tenant_service_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "card_wallet_type",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 120,
+      "description": "card_wallet_type",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "secure_3d_val_code",
+      "length": 1024,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 121,
+      "description": "secure_3d_val_code",
+      "precision": 0,
+      "scale": 0
+    }
+  ]
+}

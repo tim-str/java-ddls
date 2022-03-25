@@ -1,0 +1,180 @@
+{
+  "name": "fdz_cloud_fdzapp_mgdlist_item",
+  "namespace": "fdz_cloud",
+  "source_system": "CM",
+  "mutable": true,
+  "owning_group_id": "Fraud team",
+  "loadtype": "FULL",
+  "raw_table_name": "cloud_fdzapp_mgdlist_item",
+  "overwrite_conformed_partition_key": "",
+  "delimiter": "",
+  "delimiter_row": "",
+  "skipheaderrows": "1",
+  "columns": [
+    {
+      "name": "app_id",
+      "type": "string",
+      "length": 22,
+      "nullable": false,
+      "nk": true,
+      "ordinal_position": 1,
+      "description": "app_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_id",
+      "type": "string",
+      "length": 22,
+      "nullable": false,
+      "nk": true,
+      "ordinal_position": 2,
+      "description": "mgdlist_item_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_id",
+      "type": "string",
+      "length": 22,
+      "nullable": false,
+      "nk": true,
+      "ordinal_position": 3,
+      "description": "mgdlist_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_enabled",
+      "type": "boolean",
+      "length": -1,
+      "nullable": false,
+      "nk": false,
+      "ordinal_position": 4,
+      "description": "mgdlist_item_enabled",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_timespan_start",
+      "type": "bigint",
+      "length": 19,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 5,
+      "description": "mgdlist_item_timespan_start",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_timespan_end",
+      "type": "bigint",
+      "length": 19,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 6,
+      "description": "mgdlist_item_timespan_end",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_key",
+      "type": "string",
+      "length": 254,
+      "nullable": false,
+      "nk": false,
+      "ordinal_position": 7,
+      "description": "mgdlist_item_key",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_value",
+      "type": "string",
+      "length": -1,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 8,
+      "description": "mgdlist_item_value",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "mgdlist_item_comment",
+      "type": "string",
+      "length": 256,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 9,
+      "description": "mgdlist_item_comment",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "tenant_id",
+      "type": "string",
+      "length": 22,
+      "nullable": false,
+      "nk": false,
+      "ordinal_position": 10,
+      "description": "tenant_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "tenant_group_id",
+      "type": "string",
+      "length": 22,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 11,
+      "description": "tenant_group_id",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "createdat",
+      "type": "bigint",
+      "length": 19,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 12,
+      "description": "createdat",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "createdby",
+      "type": "string",
+      "length": 22,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 13,
+      "description": "createdby",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "updatedat",
+      "type": "bigint",
+      "length": 19,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 14,
+      "description": "updatedat",
+      "precision": 0,
+      "scale": 0
+    },
+    {
+      "name": "updatedby",
+      "type": "string",
+      "length": 22,
+      "nullable": true,
+      "nk": false,
+      "ordinal_position": 15,
+      "description": "updatedby",
+      "precision": 0,
+      "scale": 0
+    }
+  ]
+}

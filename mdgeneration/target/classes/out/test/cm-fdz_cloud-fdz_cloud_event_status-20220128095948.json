@@ -1,0 +1,26 @@
+{
+  "name": "fdz_cloud_event_status",
+  "namespace": "fdz_cloud",
+  "source_system": "CM",
+  "mutable": true,
+  "owning_group_id": "Fraud team",
+  "loadtype": "DELTA",
+  "raw_table_name": "cloud_event_status",
+  "overwrite_conformed_partition_key": "",
+  "delimiter": "",
+  "delimiter_row": "",
+  "skipheaderrows": "1",
+  "columns": [
+    {
+      "name": "event_timestamp",
+      "type": "bigint",
+      "length": 19,
+      "nullable": false,
+      "nk": false,
+      "ordinal_position": 4,
+      "description": "event_timestamp",
+      "precision": 0,
+      "scale": 0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+cm-fdz_cloud-aws_event_cards-20220125094853.json
+
+27/01:
+cm-fdz_cloud-fdz_cloud_event_cards-20220127115056
+cm-fdz_cloud-fdz_cloud_event_transfers-20220127132544
